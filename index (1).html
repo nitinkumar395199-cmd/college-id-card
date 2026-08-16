@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CSJMU Student Details - NITIN KUMAR">
+  <title>CSJMU Student Details - NITIN KUMAR</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f7;
+      color: #111827;
+    }
+    .card {
+      width: min(680px, 100%);
+      background: #fff;
+      border: 1px solid #d9dee7;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0,0,0,.10);
+    }
+    .header {
+      padding: 28px 30px 24px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: clamp(25px, 5vw, 38px);
+      letter-spacing: .3px;
+    }
+    .header p {
+      margin: 10px 0 0;
+      font-size: 16px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    .content { padding: 28px 30px 32px; }
+    .student-name {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 24px;
+    }
+    .details {
+      display: grid;
+      grid-template-columns: 145px 1fr;
+      gap: 0;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .details div {
+      padding: 15px 16px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .details div:nth-last-child(-n+2) { border-bottom: 0; }
+    .label {
+      font-weight: 700;
+      background: #f8fafc;
+      color: #374151;
+    }
+    .value {
+      overflow-wrap: anywhere;
+    }
+    .note {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #f8fafc;
+      color: #4b5563;
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: center;
+    }
+    @media (max-width: 520px) {
+      body { padding: 12px; }
+      .content, .header { padding-left: 18px; padding-right: 18px; }
+      .details { grid-template-columns: 1fr; }
+      .details div { border-bottom: 1px solid #e5e7eb !important; }
+      .details div:last-child { border-bottom: 0 !important; }
+      .label { padding-bottom: 7px !important; }
+      .value { padding-top: 7px !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <h1>CSJMU Student Details</h1>
+      <p>Chhatrapati Shahu Ji Maharaj University, Kanpur</p>
+    </header>
+
+    <section class="content">
+      <h2 class="student-name">NITIN KUMAR</h2>
+
+      <div class="details" aria-label="Student details">
+        <div class="label">Enrollment No.</div>
+        <div class="value">CSJMU262775314</div>
+
+        <div class="label">College</div>
+        <div class="value">ARMAPoRe P.G. COLLEGE KANPUR</div>
+
+        <div class="label">Course</div>
+        <div class="value">B.Com</div>
+
+        <div class="label">Affiliation</div>
+        <div class="value">AFFILIATED</div>
+
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:nitinkumar827939@gmail.com">nitinkumar827939@gmail.com</a></div>
+
+        <div class="label">Phone</div>
+        <div class="value"><a href="tel:9045998135">9045998135</a></div>
+
+        <div class="label">Address</div>
+        <div class="value">BANAHAR POST CHHACHHA MAINPURI</div>
+      </div>
+
+      <div class="note">
+        Student information page. This page is not an official university identity card.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
